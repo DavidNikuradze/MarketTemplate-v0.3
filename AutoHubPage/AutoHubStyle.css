@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* header */
+
+
+ #AutoHubHeader{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  border: 2px solid transparent;
+}
+
+#AutoHubNavBarBrand{
+    color: #000000;
+    opacity: 0.8;
+    text-shadow: 5px 5px 7px #1a1a1a;
+    font-weight: bold;
+    font-size: 25px;
+}
+#CollapseBTN{
+   background-color: #797979;
+   opacity: 0.6;
+}
+
+#AutoHubLogInBTN{
+    color: #a80000;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    position: absolute;
+   background-color: transparent;
+
+  
+}
+#AutoHubLogInIcon{
+    width: 35px;
+    height: 35px;
+   
+    z-index: 1;
+    background-color: transparent;
+   
+}
+
+#SignUpLBL{
+    margin-top: 10px;
+    margin-right: 10px;
+   
+    opacity: 0.8;
+}
+
+#HubLinks{
+   color: black;
+   opacity: 0.6;
+}
+#HubLinks:hover{
+  transition: 0.5s;
+  color: brown;
+}
+
+
+/*    Log In     */
+
+#LogInLBL{
+  opacity: 0.5;
+  
+}
+
+#defaultForm-email{
+  margin-top: 2%;
+  border-radius: 10px;
+
+}
+#defaultForm-email:hover{
+  transition: 1s;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(235, 235, 235, 0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+   -8px -8px 12px 0 rgba(211, 211, 211, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+#MailLBL{
+  width: 60%;
+  margin-bottom: 10px;
+  opacity: 0.6;
+  margin-left: 5%;
+   
+}
+
+#defaultForm-pass{
+  margin-top: 2%;
+border-radius: 10px;
+}
+ 
+#defaultForm-pass:hover{
+  transition: 1s;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(235, 235, 235, 0.22), rgba(255,255,255,0.25));
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+  -8px -8px 12px 0 rgba(211, 211, 211, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+#PasswordLBL{
+  width: 60%;
+  margin-bottom: 10px;
+  opacity: 0.6;
+  margin-left: 5%;
+}
+#ForgotPassLBL{
+  opacity: 0.8;
+  text-align: center;
+  color: rgb(77, 77, 77);
+}
+#ForgotPassLBL:hover{
+  transition: 0.5s;
+  text-decoration: none;
+  color: rgb(163, 76, 76);
+  opacity: 1;
+
+}
+#FacebookReg{
+ text-align: end;
+}
+#TwitterReg{
+  text-align: start;
+}
+#LogInBTN{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+#LogInBTN:hover{
+  transition: .5s;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(235, 235, 235, 0.22), rgba(255,255,255,0.25));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(89, 255, 98);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 1;
+}
+#RegBTN{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  opacity: 0.9;
+  text-align: center;
+}
+#RegBTN:hover{
+  transition: .5s;
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(235, 235, 235, 0.22), rgba(255,255,255,0.25));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(255, 117, 117);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+
+
+/*   VIP Section */
+
+
+
+.gallery {
+    width: 100%;
+   
+  }
+  
+  .gallery-container {
+    align-items: center;
+    display: flex;
+    height: 350px;
+    margin: 0 auto;
+    max-width: 1500px;
+    position: relative;
+  }
+  
+  .gallery-item {
+    height: 150px;
+    opacity: .4;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 200px;
+    z-index: 0;
+    border-radius: 30px;
+  }
+  
+  .gallery-item.gallery-item-selected {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    height: 300px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    z-index: 2;
+  }
+  
+  .gallery-item.gallery-item-previous,
+  .gallery-item.gallery-item-next {
+    height: 200px;
+    opacity: 1;
+    width: 300px;
+    z-index: 1;
+  }
+  
+  .gallery-item.gallery-item-previous {
+    left: 30%;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-item.gallery-item-next {
+    left: 70%;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-item.gallery-item-first {
+    left: 15%;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-item.gallery-item-last {
+    left: 85%;
+    transform: translateX(-50%);
+  }
+  
+  .gallery-controls {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .gallery-controls button {
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 0 12px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    background-color: #d1d1d1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .gallery-controls button:focus {
+    outline: none;
+  }
+  
+  .gallery-controls-previous {
+    position: relative;
+  }
+  
+  .gallery-controls-previous::before {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    left: -10px;
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 4px;
+  }
+  
+  .gallery-controls-previous:hover::before {
+    left: -18px;
+  }
+  
+  .gallery-controls-next {
+    position: relative;
+  }
+  
+  .gallery-controls-next::before {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    padding: 2px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: right 0.15s ease-in-out;
+    width: 4px;
+  }
+  
+  .gallery-controls-next:hover::before {
+    right: -18px;
+  }
+  
+  .gallery-nav {
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .gallery-nav li {
+    background: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+  }
+  
+  .gallery-nav li.gallery-item-selected {
+    background: #555;
+  }
+
+
+/*     vip section     */
+
+
+
+#SectionAndCartContainer{
+    width: 100%;
+    height: 80%;
+    margin-top: 15px;
+    margin: auto;
+   
+}
+
+#CategoryItems{
+    margin-left: 1%;
+    width:  100%;
+    height: 50%;
+    margin-top: 17px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    
+}
+#FormSection{
+    width: 100%;
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 40px;
+}
+
+#CategorySection{
+  
+}
+#CartItems{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+   
+}
+#CartItemsFlex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#FlexCart{
+    background-color: #f1f1f1;
+    width: 340px;
+    height: autძ;
+    margin: 7px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: auto;
+    display: inline-block;
+}
+
+#CardInContainer{
+  max-width: 100%;
+
+  max-height:  100%;
+  
+}
+
+#FlexCart:hover #BackgroundCart{
+  bottom: 34%;
+  height: 64%;
+  background-color:#ffffff;
+  z-index: 2;
+  opacity: 1;
+  
+}
+#BackgroundCart{
+  
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 0.9;
+  
+}
+#NameCard{
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  opacity: 0.8;
+}
+#YearCard{
+  width: 70px;
+  height: 30px;
+  opacity: 0.9;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#LocationCard{
+  width: 100px;
+  height: 30px;
+  opacity: 0.9;
+  margin-left: 100px;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#PriceCard{
+  width: 70px;
+  height: 30px;
+  margin-left: 228px;
+  opacity: 0.9;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#DetailBTN{
+ z-index: 10;
+
+}
+#CardItems{
+ 
+}
+#CardItems:hover{
+
+}
+#CarModelName{
+  margin-top: 50px;
+}
+#CardBackgroundContainerTXT{
+  padding: 4px;
+}
+
+#MotorTXT, #MotorChoiseTXT,#TransmisionTXT,#TransmisionChoiseTXT, #FuelTXT, #FuelChoiseTXT, #CustomsClearanceTXT, #CustomsClearanceChoiseTXT{
+  opacity: 0.8;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1px;
+}
+
+#myModal{
+ 
+}
+#CardImage{
+  width: 100%;
+  max-height: 193px;
+}
+
+
+
+
+
+/* Category Section*/
+
+/* Car Category*/
+
+#CarsCategory{
+    width: 70px;
+    height: 45px;
+    border: none;
+    background-color: #dbdbdb;
+    position: sticky;
+    top: 0;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#CarIconCategory{
+    width: 100%;
+    height: 40px;
+   
+    opacity: 0.5;
+}
+
+
+
+/* Motorcycle Category*/
+
+#MotorcycleCategory{
+    width: 70px;
+    height: 45px;
+    border: none;
+    background-color: #dbdbdb;
+    margin-left: 5%;
+    border-radius: 10px;
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+#MotorcycleIconCategory{
+    width: 100%;
+    height: 40px;
+    opacity: 0.5;
+}
+
+
+
+#BigCarsCategory{
+    width: 70px;
+    height: 45px;
+    border: none;
+    background-color: #dbdbdb;
+    margin-left: 5%;
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#BigCarsIconCategory{
+    width: 100%;
+    height: 35px;
+    opacity: 0.5;
+    right: 10px;
+    margin-bottom: 10px;
+}
+
+#CategorySection{
+   margin: auto;
+   width: max-content;
+
+}
+#DealTypeBTNContainer{
+    margin-top: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width: 100%;
+    
+}
+#DealTypeButton{
+  display: block;
+
+}
+
+#ManufacturerBTNContainer, #ModelBTNContainer,#CategoryBTNContainer{
+    margin-top: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    float: center;
+    
+   
+}
+
+#ManufacturerButton{
+    margin: auto;
+}
+#YearsBTNContainer, #YearstoBTNContainer{
+
+    margin-top: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin-left: 13px;
+    
+    
+}
+#YearstoButton, #YearsButton{
+   
+    opacity: 0.5;
+    font-size: 13px;
+    
+   
+}
+#labelyear{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+#CategoryBTNContainertran{
+    margin-top: 40px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    float: center;
+}
+
+#ScrollCardContainer{
+  width: 100%;
+  height: 3%;
+  text-align: center;
+  margin-top: 30px;
+
+}
+#ScrollCardIMG{
+  width: 50px;
+  height: 50px;
+  transition: .5s;
+  text-align: center;
+  opacity: 0.5;
+}
+#ScrollCardIMG:hover{
+    width: 60px;
+    height: 60px;
+   
+}
+
+
+
+
+#BrandResultBTN{
+  
+ margin-top: 30px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border-radius: 10px;
+ 
+}
+#BrandResultBTN:hover{
+  color: #b80000;
+  background-color: #dbdbdb;
+  transition: 0.5s;
+}
+
+
+/*        Card Modal    */
+
+
+#ModalCardDesc2{
+   width: 100%;
+   height: auto;
+   margin: auto;
+   background-color: yellow;
+   margin-top: 5%;
+}
+#CardBackgroundContainerTXT2{
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+
+
+#ModalItemDescription2{
+ margin-top: 1%;
+}
+#ModalCarouselItemContainer2{
+  width: 100%;
+  height: auto;
+ 
+}
+#ModalCarouselItemContainerIMG2{
+   margin: auto;
+   width: 100%;
+   height: auto;
+}
+#carousel-example-1z{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
